@@ -1,5 +1,5 @@
-#ifndef WPILIB_H_
-#define WPILIB_H_
+#ifndef SCALEDJOYSTICK_H_
+#define SCALEDJOYSTICK_H_
 
 #include "WPILib.h"
 
@@ -7,7 +7,7 @@ class ScaledJoystick
 {
 public:
 	ScaledJoystick(int joystickNumber);
-	virtual ScaledJoystick();
+	virtual ~ScaledJoystick();
 	
 	float GetLinX(float scale);
 	float GetLinY(float scale);

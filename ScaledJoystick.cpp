@@ -1,12 +1,11 @@
 #include "WPILib.h"
+#include <cmath>
 
 class ScaledJoystick 
 {
 public:
-	ScaledJoystick(int joystickNumber)
-	{
-		stick = new Joystick(joystickNumber);
-	}
+	ScaledJoystick(int joystickNumber):
+		stick(joystickNumber){}
 	
 	float GetLinX(float scale)
 	{
@@ -25,17 +24,17 @@ public:
 	
 	float GetQuadX(void)
 	{
-		return Math.pow(stick.GetX(), 2);
+		return pow(stick.GetX(), 3);
 	}
 	
 	float GetQuadY(void)
 	{
-		return Math.pow(stick.GetY(), 2);
+		return pow(stick.GetY(), 3);
 	}
 	
 	float GetQuadZ(void)
 	{
-		return Math.pow(stick.GetZ(), 2);
+		return pow(stick.GetZ(), 3);
 	}
 		
 private:
