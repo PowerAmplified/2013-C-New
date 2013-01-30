@@ -1,4 +1,4 @@
-SimpleTemplate_partialImage/Debug/Objects/SimpleTemplate/MyRobot.o:  \
+SimpleTemplate_partialImage/Debug/Objects/2013-Robot-C/MyRobot.o:  \
  C:/Users/Student/Documents/GitHub/2013-C-New/MyRobot.cpp \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
   C:/WindRiver/vxworks-6.3/target/h/string.h \

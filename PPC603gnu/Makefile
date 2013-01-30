@@ -32,7 +32,7 @@ MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
 WS_ROOT_DIR := C:/WindRiver/workspace
-PRJ_ROOT_DIR := $(WS_ROOT_DIR)/SimpleTemplate
+PRJ_ROOT_DIR := C:/Users/Student/Documents/GitHub/2013-C-New
 
 
 
@@ -162,16 +162,16 @@ SimpleTemplate_partialImage/$(MODE_DIR)/% : LIBPATH =
 SimpleTemplate_partialImage/$(MODE_DIR)/% : LIBS = 
 SimpleTemplate_partialImage/$(MODE_DIR)/% : OBJ_DIR := SimpleTemplate_partialImage/$(MODE_DIR)
 
-SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/MyRobot.o : $(PRJ_ROOT_DIR)/MyRobot.cpp $(FORCE_FILE_BUILD)
+SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/MyRobot.o : $(PRJ_ROOT_DIR)/MyRobot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/ScaledJoystick.o : $(PRJ_ROOT_DIR)/ScaledJoystick.cpp $(FORCE_FILE_BUILD)
+SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/ScaledJoystick.o : $(PRJ_ROOT_DIR)/ScaledJoystick.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_SimpleTemplate_partialImage = SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/MyRobot.o \
-	 SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/ScaledJoystick.o
+OBJECTS_SimpleTemplate_partialImage = SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/MyRobot.o \
+	 SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/ScaledJoystick.o
 
 SimpleTemplate_partialImage/$(MODE_DIR)/SimpleTemplate_partialImage.o : $(OBJECTS_SimpleTemplate_partialImage)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_SimpleTemplate_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -185,7 +185,7 @@ SimpleTemplate_partialImage/$(MODE_DIR)/SimpleTemplate_partialImage_clean :
 
 force : 
 
-DEP_FILES := SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/MyRobot.d SimpleTemplate_partialImage/$(MODE_DIR)/Objects/SimpleTemplate/ScaledJoystick.d
+DEP_FILES := SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/MyRobot.d SimpleTemplate_partialImage/$(MODE_DIR)/Objects/2013-Robot-C/ScaledJoystick.d
 -include $(DEP_FILES)
 
 
