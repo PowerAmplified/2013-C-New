@@ -25,18 +25,16 @@ public:
 	Compressor comp;
 	
 private:
-	/*
-	const int talonUpRPort;
-	const int talonUpLPort;
-	const int talonDownRPort;
-	const int talonDownLPort;
-	const int victorUpPort;
-	const int victorDownPort;
-	const int jaguarHopperPort;
-	const int solenoidPneuPort;
-	const int compPressurePort;
-	const int compRelayPort;
-	*/
+	static const int talonUpRPort = 1;
+	static const int talonUpLPort = 2; 
+	static const int talonDownRPort = 3;
+	static const int talonDownLPort = 4;
+	static const int victorUpPort = 5;
+	static const int victorDownPort = 6;
+	static const int jaguarHopperPort = 7;
+	static const int solenoidPneuPort = 8;
+	static const int compPressurePort = 1;
+	static const int compRelayPort = 1;
 };
 
 #endif

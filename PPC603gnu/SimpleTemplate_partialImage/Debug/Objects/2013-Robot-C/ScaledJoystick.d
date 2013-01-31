@@ -1,5 +1,6 @@
 SimpleTemplate_partialImage/Debug/Objects/2013-Robot-C/ScaledJoystick.o:  \
- C:/Users/Student/Documents/GitHub/2013-C-New/ScaledJoystick.cpp \
+ C:/Users/student/Documents/GitHub/2013-C-New/ScaledJoystick.cpp \
+  C:/Users/student/Documents/GitHub/2013-C-New/ScaledJoystick.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
   C:/WindRiver/vxworks-6.3/target/h/string.h \
   C:/WindRiver/vxworks-6.3/target/h/types/vxANSI.h \
@@ -379,6 +380,8 @@ SimpleTemplate_partialImage/Debug/Objects/2013-Robot-C/ScaledJoystick.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h \
   c:/windriver/gnu/3.4.4-vxworks-6.3/x86-win32/lib/gcc/../../../x86-win32/include/c++/3.4.4/cmath \
   C:/WindRiver/vxworks-6.3/target/h/math.h
+
+C:/Users/student/Documents/GitHub/2013-C-New/ScaledJoystick.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 
