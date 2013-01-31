@@ -377,7 +377,8 @@ SimpleTemplate_partialImage/Debug/Objects/2013-Robot-C/MyRobot.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Vision/HSLImage.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Vision/ColorImage.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h \
-  C:/Users/Student/Documents/GitHub/2013-C-New/ScaledJoystick.h
+  C:/Users/Student/Documents/GitHub/2013-C-New/ScaledJoystick.h \
+  C:/Users/Student/Documents/GitHub/2013-C-New/AutoRobot.h
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 
@@ -1134,3 +1135,5 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/Vision/ColorImage.h:
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h:
 
 C:/Users/Student/Documents/GitHub/2013-C-New/ScaledJoystick.h:
+
+C:/Users/Student/Documents/GitHub/2013-C-New/AutoRobot.h:

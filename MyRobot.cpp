@@ -1,7 +1,6 @@
 #include "WPILib.h"
 #include "ScaledJoystick.h"
-
-
+#include "AutoRobot.h"
 
 /**
  * This is a demo program showing the use of the RobotBase class.
@@ -22,6 +21,7 @@ class RobotDemo : public SimpleRobot
 	Compressor comp;
 	ScaledJoystick sjLeft;
 	ScaledJoystick sjRight;
+	AutoRobot cAutonomous;
 
 public:
 	RobotDemo(void):
