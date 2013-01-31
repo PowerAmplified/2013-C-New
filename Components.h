@@ -1,16 +1,15 @@
 #ifndef COMPONENTS_H_
 #define COMPONENTS_H_
 
-#include "WPILiB.h"
+#include "WPILib.h"
 
 class Components
 {
 public:
-	//Init Drive Components
-	Talon talonUpR;
-	Talon talonUpL;
-	Talon talonDownR;
-	Talon talonDownL;
+	Components(void);
+	
+	//Robot is called Roberto
+	RobotDrive roberto;
 	
 	//Init Shooter Components
 	Victor victorUp;
@@ -26,16 +25,18 @@ public:
 	Compressor comp;
 	
 private:
-	const int talonUpRPort = 1;
-	const int talonUpLPort = 2; 
-	const int talonDownRPort = 3;
-	const int talonDownLPort = 4;
-	const int victorUpPort = 5;
-	const int victorDownPort = 6;
-	const int jaguarHopperPort = 7;
-	const int solenoidPneuPort = 8;
-	const int compPressurePort = 1;
-	const int compRelayPort = 1;
-   
-	
+	/*
+	const int talonUpRPort;
+	const int talonUpLPort;
+	const int talonDownRPort;
+	const int talonDownLPort;
+	const int victorUpPort;
+	const int victorDownPort;
+	const int jaguarHopperPort;
+	const int solenoidPneuPort;
+	const int compPressurePort;
+	const int compRelayPort;
+	*/
 };
+
+#endif
