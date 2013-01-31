@@ -17,13 +17,13 @@ public:
 	Victor victorDown;
 	
 	//Init Componenets for Da Hoppa
-	Jaguar jaguarhopper;
+	Jaguar jaguarHopper;
 	
 	//Init Compressor Components
-	Spike spikecomp;
+	Relay relayComp;
 	
 	//Init Pneumatic Componenets
-	Solenoid solenoidpneu;
+	Solenoid solenoidPneu;
 	
 private:
 	
