@@ -32,7 +32,7 @@ MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
 WS_ROOT_DIR := C:/WindRiver/workspace
-PRJ_ROOT_DIR := C:/Users/Student/Documents/GitHub/2013-C-New
+PRJ_ROOT_DIR := C:/Users/student/Documents/GitHub/2013-C-New
 
 
 
