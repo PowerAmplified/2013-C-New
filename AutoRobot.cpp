@@ -16,5 +16,5 @@ void AutoRobot::AutoRobotRun(void) {
 		//Do absolutely nothing.
 		break;
 	}
-	RobotCommandCycle = (RobotCommandCycle+1) % 2;
+	RobotCommandCycle = (RobotCommandCycle++) % 2;
 }

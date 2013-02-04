@@ -10,6 +10,7 @@
 class Components
 {
 public:
+	// Constructor
 	Components(void);
 	
 	//Robot is called Roberto

@@ -6,7 +6,6 @@
 class AutoRobot {
 public:
 	AutoRobot();
-	virtual ~AutoRobot();
 	void AutoRobotRun(void);
 	
 private:

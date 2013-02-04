@@ -21,8 +21,6 @@ public:
 		cAutonomous()
 	{
 		components.roberto.SetExpiration(0.1);
-		//solout.Set(false);
-		//solin.Set(true);
 		components.comp.Start();
 	}
 
@@ -44,9 +42,11 @@ public:
 		components.roberto.SetSafetyEnabled(true);
 		while (IsOperatorControl())
 		{
-			// This is actually tank drive, now.
+			// This is actually mechanum drive, now.
 			components.roberto.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
-			Wait(0.005);				// wait for a motor update time
+		
+			// Wait for a motor update time
+			Wait(0.005);
 		}
 	}
 	
