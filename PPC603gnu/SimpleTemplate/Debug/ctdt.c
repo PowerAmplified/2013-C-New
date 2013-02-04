@@ -11,6 +11,14 @@ void _GLOBAL__I_C__Users_Student_Documents_GitHub_2013_C_New_ScaledJoystick_cpp_
 
 void _GLOBAL__I__Z20FRC_userClassFactoryv();
 
+void _GLOBAL__I__ZN12SinglePistonC2Ev();
+
+void _GLOBAL__I__ZN6LoaderC2Ev();
+
+void _GLOBAL__I__ZN7ShooterC2Ev();
+
+void _GLOBAL__I__ZN9AutoRobotC2Ev();
+
 void _GLOBAL__I__ZN12PrintCommandC2EPKc();
 
 void _GLOBAL__I__ZN9Scheduler9_instanceE();
@@ -62,6 +70,10 @@ void (*_ctors[])() =
     {
     _GLOBAL__I_C__Users_Student_Documents_GitHub_2013_C_New_ScaledJoystick_cpp_05647D79_671C25B0,
     _GLOBAL__I__Z20FRC_userClassFactoryv,
+    _GLOBAL__I__ZN12SinglePistonC2Ev,
+    _GLOBAL__I__ZN6LoaderC2Ev,
+    _GLOBAL__I__ZN7ShooterC2Ev,
+    _GLOBAL__I__ZN9AutoRobotC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
     _GLOBAL__I__ZN9Scheduler9_instanceE,
     _GLOBAL__I__ZN11WaitCommandC2Ed,
@@ -91,6 +103,14 @@ void (*_ctors[])() =
 void _GLOBAL__D__GLOBAL__I_C__Users_Student_Documents_GitHub_2013_C_New_ScaledJoystick_cpp_05647D79_671C25B0();
 
 void _GLOBAL__D__Z20FRC_userClassFactoryv();
+
+void _GLOBAL__D__ZN12SinglePistonC2Ev();
+
+void _GLOBAL__D__ZN6LoaderC2Ev();
+
+void _GLOBAL__D__ZN7ShooterC2Ev();
+
+void _GLOBAL__D__ZN9AutoRobotC2Ev();
 
 void _GLOBAL__D__ZN9Scheduler9_instanceE();
 
@@ -135,6 +155,10 @@ void (*_dtors[])() =
     {
     _GLOBAL__D__GLOBAL__I_C__Users_Student_Documents_GitHub_2013_C_New_ScaledJoystick_cpp_05647D79_671C25B0,
     _GLOBAL__D__Z20FRC_userClassFactoryv,
+    _GLOBAL__D__ZN12SinglePistonC2Ev,
+    _GLOBAL__D__ZN6LoaderC2Ev,
+    _GLOBAL__D__ZN7ShooterC2Ev,
+    _GLOBAL__D__ZN9AutoRobotC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
     _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange,
     _GLOBAL__D__ZN17MotorSafetyHelper12m_headHelperE,
