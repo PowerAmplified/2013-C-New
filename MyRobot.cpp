@@ -1,9 +1,6 @@
 #include "WPILib.h"
-#include "ScaledJoystick.h"
+#include "Components/Components.h"
 #include "AutoRobot.h"
-#include "Loader.h"
-#include "Shooter.h"
-#include "SinglePiston.h"
 
 /**
  * This is a demo program showing the use of the RobotBase class.
@@ -13,28 +10,20 @@
  */ 
 class RobotDemo : public SimpleRobot
 {
-	RobotDrive myRobot;
-	Shooter shooter;
-	Loader loader;
-	SinglePiston piston;
-	Compressor comp;
+	Components components;
 	Joystick jXbox;
 	AutoRobot cAutonomous;
 
 public:
 	RobotDemo(void):
-		myRobot(1,2,3,4),
-		shooter(),
-		loader(),
-		piston(),
-		comp(1, 1),
+		components(),
 		jXbox(1),
 		cAutonomous()
 	{
-		myRobot.SetExpiration(0.1);
+		components.roberto.SetExpiration(0.1);
 		//solout.Set(false);
 		//solin.Set(true);
-		comp.Start();
+		components.comp.Start();
 	}
 
 	/**
@@ -52,11 +41,11 @@ public:
 	 */
 	void OperatorControl(void)
 	{
-		myRobot.SetSafetyEnabled(true);
+		components.roberto.SetSafetyEnabled(true);
 		while (IsOperatorControl())
 		{
 			// This is actually tank drive, now.
-			myRobot.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
+			components.roberto.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
 			Wait(0.005);				// wait for a motor update time
 		}
 	}
