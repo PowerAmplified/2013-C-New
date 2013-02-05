@@ -11,6 +11,10 @@ public:
 
 	void Off();
 	
+	bool direction;
+	
+	float speed;
+	
 	Victor motor1;
 	Victor motor2;
 };

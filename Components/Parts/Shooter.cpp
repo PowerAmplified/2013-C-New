@@ -1,6 +1,8 @@
 #include "Shooter.h"
 
 Shooter::Shooter(int port1, int port2) : motor1(port1), motor2(port2) {
+	direction = 1;
+	speed = 0;
 }
 
 void Shooter::Set(float speed)

@@ -58,7 +58,10 @@ public:
 		{
 			// This is actually mechanum drive, now.
 			components.roberto.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
-		
+			
+			components.shooter.speed = max(min(components.shooter.speed+(0.1*jXbox.GetRawButton(8))-(0.1*jXbox.GetRawButton(7)),1),0);
+			components.shooter.Set(components.shooter.speed*(components.shooter.direction*2-1));
+			
 			// Wait for a motor update time
 			Wait(0.005);
 		}
