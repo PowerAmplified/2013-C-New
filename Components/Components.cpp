@@ -7,4 +7,3 @@ Components::Components(void):
     loader(jaguarHopperPort),
     piston(solenoidPneuPort1,solenoidPneuPort2),
     comp(compRelayPort, compPressurePort){}
-

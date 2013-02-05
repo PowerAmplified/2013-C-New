@@ -1,6 +1,5 @@
 #include "WPILib.h"
 #include "Components/Components.h"
-#include "AutoRobot.h"
 
 /**
  * This is a demo program showing the use of the RobotBase class.
@@ -10,16 +9,16 @@
  */ 
 class RobotDemo : public SimpleRobot
 {
+private:
 	Components components;
 	Joystick jXbox;
-	AutoRobot cAutonomous;
 
 public:
 	RobotDemo(void):
 		components(),
-		jXbox(1),
-		cAutonomous()
+		jXbox(1)
 	{
+		components.roberto.SetSafetyEnabled(true);
 		components.roberto.SetExpiration(0.1);
 		components.comp.Start();
 	}
@@ -29,8 +28,24 @@ public:
 	 */
 	void Autonomous(void)
 	{
-		while (IsAutonomous()) {
-			cAutonomous.AutoRobotRun();
+		int RobotCommandCycle = 0;
+		
+		while (IsAutonomous()) 
+		{
+			switch (RobotCommandCycle) 
+			{
+				case 0:
+					//Move around to a good location
+					break;
+				case 1:
+					//SHOOT STUFF!
+					break;
+				default:
+					//Do absolutely nothing.
+					break;
+			}
+			
+			RobotCommandCycle = (RobotCommandCycle++) % 2;
 		}
 	}
 
@@ -39,7 +54,6 @@ public:
 	 */
 	void OperatorControl(void)
 	{
-		components.roberto.SetSafetyEnabled(true);
 		while (IsOperatorControl())
 		{
 			// This is actually mechanum drive, now.
