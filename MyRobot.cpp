@@ -27,6 +27,10 @@ public:
 		components.roberto.SetExpiration(0.1);
 		components.roberto.SetSafetyEnabled(true);
 		components.comp.Start();
+		
+		// Invert Right side motors
+		components.roberto.SetInvertedMotor(components.roberto.kFrontRightMotor, true);
+		components.roberto.SetInvertedMotor(components.roberto.kRearRightMotor, true);
 	}
 
 	/**
