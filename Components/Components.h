@@ -5,8 +5,8 @@
 #include "Parts/Loader.h"
 #include "Parts/Shooter.h"
 #include "Parts/SinglePiston.h"
-#include "Parts/ScaledJoystick.h"
 
+//All this does is create a class which contains other classes for all of our components.
 class Components
 {
 private:

@@ -9,17 +9,19 @@
  */ 
 class RobotDemo : public SimpleRobot
 {
-private:
+	//Our classes.  Can only be accessed within RobotDemo.
 	Components components;
 	Joystick jXbox;
 
 public:
+	//Define the constructor for RobotDemo
 	RobotDemo(void):
 		components(),
 		jXbox(1)
 	{
-		components.roberto.SetSafetyEnabled(true);
+		//Set some stuff
 		components.roberto.SetExpiration(0.1);
+		components.roberto.SetSafetyEnabled(true);
 		components.comp.Start();
 	}
 
@@ -28,6 +30,7 @@ public:
 	 */
 	void Autonomous(void)
 	{
+		//Which cycle of commands the robot is on, so it loops through all this mess.
 		int RobotCommandCycle = 0;
 		
 		while (IsAutonomous()) 
@@ -45,6 +48,7 @@ public:
 					break;
 			}
 			
+			//Increment it, then modulate it so that it will repeat upon completion
 			RobotCommandCycle = (RobotCommandCycle++) % 2;
 		}
 	}
@@ -59,6 +63,7 @@ public:
 			// This is actually mechanum drive, now.
 			components.roberto.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
 			
+			//This part will take inputs from our gamepad and change the speed of the shooter by increments of .1 between 0 and 1.
 			components.shooter.speed = max(min(components.shooter.speed+(0.1*jXbox.GetRawButton(8))-(0.1*jXbox.GetRawButton(7)),1),0);
 			components.shooter.Set(components.shooter.speed*(components.shooter.direction*2-1));
 			
