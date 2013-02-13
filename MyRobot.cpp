@@ -70,7 +70,7 @@ public:
 		{
 			// This is actually mechanum drive, now.
 			//components.roberto.MecanumDrive_Cartesian(jXbox.GetX(), jXbox.GetY(), jXbox.GetRawAxis(4));
-			components.roberto.MecanumDrive_Cartesian(lJoy.GetX(), lJoy.GetY(), rJoy.GetX());
+			components.roberto.MecanumDrive_Cartesian(-lJoy.GetY(), lJoy.GetX(), rJoy.GetX());
 			
 			//This part will take inputs from our gamepad and change the speed of the shooter by increments of .1 between 0 and 1.
 			//components.shooter.speed = max(min(components.shooter.speed+(0.1*jXbox.GetRawButton(8))-(0.1*jXbox.GetRawButton(7)),1),0);
