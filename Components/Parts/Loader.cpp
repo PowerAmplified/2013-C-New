@@ -1,6 +1,8 @@
 #include "Loader.h"
 
 Loader::Loader(int port) : motor1(port) {
+	LoadTime = 10;
+	UpTime = 0;
 }
 
 void Loader::LoadDisc()
